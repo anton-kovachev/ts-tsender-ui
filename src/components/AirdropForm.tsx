@@ -198,7 +198,7 @@ export default function AirdropForm() {
       <br />
       <InputField
         label="Amounts"
-        placeholder="100, 200, ..."
+        placeholder="0.1, 0.2, 0.5, 1..."
         value={amounts}
         large={true}
         type="text"
@@ -213,7 +213,7 @@ export default function AirdropForm() {
           {tokenSymbol}
         </div>
         <div className="flex justify-between items-center">
-          <strong>Tokens Balance:</strong>
+          <strong>Tokens Balance :</strong>
           {formatUnits(BigInt(tokenBalance ?? 0), tokenDecimals ?? 18)}
         </div>
         <div className="flex justify-between items-center">
