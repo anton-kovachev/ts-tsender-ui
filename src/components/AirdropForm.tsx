@@ -88,7 +88,6 @@ export default function AirdropForm() {
 
   async function handleSubmit() {
     console.log("Submitting airdrop:", { tokenAddress, recipients, amounts });
-    debugger;
     setIsLoading(true);
     try {
       const approvedAmount = await getApprovedAmount(tSenderAddress);
