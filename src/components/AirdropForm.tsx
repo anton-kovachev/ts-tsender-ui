@@ -10,15 +10,9 @@ import {
   useReadContracts,
   useAccount,
 } from "wagmi";
-import {
-  readContract,
-  waitForTransactionReceipt,
-  multicall,
-} from "@wagmi/core";
+import { readContract, waitForTransactionReceipt } from "@wagmi/core";
 import { calculateTotal } from "@/utils/calculateTotal";
-import { Abi, formatUnits, parseEther, parseUnits } from "viem";
-import { write } from "fs";
-import { dataTagErrorSymbol } from "@tanstack/react-query";
+import { formatUnits, parseEther, parseUnits } from "viem";
 
 export default function AirdropForm() {
   const [tokenAddress, setTokenAddress] = useState(() => {
